@@ -1,0 +1,14 @@
+favorite_languages = {
+    'Saad': 'python',
+    'Abrar': 'c',
+    'Afick': 'ruby',
+    'Cristiano': 'python',
+}
+
+manush = list(map(str, input("Enter names: ").split()))
+
+for quta_subhida in manush:
+    if quta_subhida in favorite_languages.keys():
+        print(f"This {quta_subhida} is quta vhukto.")
+    else:
+        print(f"Andolon kor aro, this {quta_subhida} is out. Now join the poll?")
