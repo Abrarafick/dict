@@ -1,1 +1,18 @@
+person={
+    "Abrar":{
+        "1st":12,
+        "2nd":15,
+    },
+    "Afick":{
+        "1st":10,
+        "2nd":14,
+    },
+    "Saad":{
+        "1st":11,
+        "2nd":13,
+    }
+}
 
+for key,val in person.items():
+    for key1,val1 in val.items():
+        print(f"{key}{key1} fav number is={val1}")
