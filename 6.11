@@ -1,1 +1,24 @@
+cities = {
+    "Dhaka": {
+        "country": "Bangladesh",
+        "population": "21 million",
+        "fact": "Dhaka is known as the Rickshaw Capital of the World."
+    },
+    "Tokyo": {
+        "country": "Japan",
+        "population": "37 million",
+        "fact": "Tokyo is the most populous city in the world."
+    },
+    "Paris": {
+        "country": "France",
+        "population": "11 million",
+        "fact": "Paris is known as the City of Light."
+    }
+}
+
+for city, info in cities.items():
+    print(f"\nCity: {city}")
+    print(f"  Country: {info['country']}")
+    print(f"  Population: {info['population']}")
+    print(f"  Fact: {info['fact']}")
 
