@@ -1,1 +1,36 @@
+cities = {
+    "Dhaka": {
+        "country": "Bangladesh",
+        "continent": "Asia",
+        "population": "21 million",
+        "fact": "Known as the Rickshaw Capital of the World.",
+        "famous_food": "Biriyani"
+    },
+    "Tokyo": {
+        "country": "Japan",
+        "continent": "Asia",
+        "population": "37 million",
+        "fact": "Most populous city in the world.",
+        "famous_food": "Sushi"
+    },
+    "Paris": {
+        "country": "France",
+        "continent": "Europe",
+        "population": "11 million",
+        "fact": "Known as the City of Light.",
+        "famous_food": "Croissant"
+    }
+}
+
+print("Travel Guide: Explore the Cities")
+print("_" * 40)
+
+for city, info in cities.items():
+    print(f"\nCity: {city}")
+    print(f"  Country     : {info['country']}")
+    print(f"  Continent   : {info['continent']}")
+    print(f"  Population  : {info['population']}")
+    print(f"  Fun Fact    : {info['fact']}")
+    print(f"  Famous Food : {info['famous_food']}")
+    print("_" * 40)
 
