@@ -1,0 +1,12 @@
+a_person={
+   "first_name":input(),
+   "last_name":input(),
+   "age":input(),
+   "city":input(),
+}
+key_val=list(a_person.keys())
+val_val=list(a_person.values())
+for _ in range(len(key_val)):
+    print(f"{key_val[_].title()} is {val_val[_].title()}")
+    if( _ ==1):
+        print(f"full name is :{val_val[0].title()}{val_val[_].title()}")
