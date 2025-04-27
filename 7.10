@@ -1,0 +1,14 @@
+dream_vacation={}
+
+poll=True
+
+while poll:
+    name= input("enter your name=")
+    place = input("Which place do u wanna visit?")
+    dream_vacation[name]=place
+    person=input("will u add another person with you?(Yes/No)")
+    if person.lower()== "no":
+        poll=False
+
+for name ,place in dream_vacation.items():
+    print(f"{name} would like to go {place} with his bap ka paisa")
