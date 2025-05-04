@@ -1,0 +1,7 @@
+def describe_city (city,country):
+    print(f"{city.title()} is in {country.title()}.")
+
+list_of_city= list(map(str,input("enter city names =").split(","))) #rishat bhai apnar input neyoar somoy koma diyen , sry for the cmnt he he hudai 
+country1="Bangladesh"
+for x in range(len(list_of_city)):
+    describe_city(list_of_city[x],country1)
