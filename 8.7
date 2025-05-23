@@ -1,0 +1,20 @@
+
+def make_album(album_t,artist,amount=None):
+    album={
+        "title":album_t,
+        "artist": artist 
+    }
+    if amount is not None:
+        album["songs_number"]=amount
+    return album
+
+album1=make_album("0porajeyo","Mizan")
+album2=make_album("Sotto","Mizan",9)
+album3=make_album("hobbe ki jani ","ami kemne komu")
+
+print(album1)
+print(album2)
+print(album3)
+    
+
+    
