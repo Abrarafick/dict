@@ -1,0 +1,35 @@
+
+def make_album(album_t,artist,amount=None):
+    album={
+        "title":album_t,
+        "artist": artist 
+    }
+    if amount is not None:
+        album["songs_number"]=amount
+    return album
+
+print("Enter album's information.type stop anytime for exit")
+
+while True:
+    artist = input("artist  name =")
+    if artist.lower() == "stop" :
+        break
+    
+
+    album_t=input("album title name =")
+    if album_t.lower() == "stop" :
+        break
+    
+    amount=input("enter songs amount")
+    if amount.lower() == "stop":
+        break
+    
+    if amount:
+        album1=make_album(album_t,artist,amount)
+    else:
+        album1=make_album(album_t,artist)
+        
+print(album1)
+    
+
+    
